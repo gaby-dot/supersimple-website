@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .menu {
+          background-color: #f79fd2;
+          color: #fff;
+          padding: 10px;
+        }
+        
+        .menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .menu li {
+          display: inline-block;
+          margin-right: 10px;
+        }
+        
+        .menu li a {
+          color: #fff;
+          text-decoration: none;
+          padding: 5px 10px;
+        }
+        
+        .menu li a:hover {
+          background-color: #f79fd2;
+        }
+        
+      </style>
+        <header>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="cartdetails.html">Checkout</a></li>
+          <li><a href="about.html">Sobre nosotros</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+  </header>
+    <center>
+    <img src="makeglow.jpg" alt="D:\proyecto final\venta-cosmetica\makeglow.jpg" width="1300" height="400">
+</center>
+<div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+
+function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+              {pageLanguage: 'en'},
+              'google_translate_element'
+          );
+      }
+    </script>
+    <script type="text/javascript"
+    src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+<h5>Choose the language you would perfer for a better experience!</h5>
+</script>
+<style>
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #0d0d0d;
+        color: #f79fd2;
+      }
+      
+      header {
+        background-color: #0d0d0d;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      main {
+        margin: 20px;
+      }
+      
+      h1 {
+        color: #333;
+      }
+      
+      .product {
+        border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+      }
+      
+      .product-image {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .product-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      .product-price {
+        color: #333;
+        font-size: 18px;
+      }
+      
+      .product-description {
+        color: #666;
+      }
+      
+      .btn {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      </style>
+    </style>
+    <center>
+    <h2>LIP Products</h2>
+</center>
+<div id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+</div>
+<br>
+<div id="products">
+    <div class="product" data-id="1" data-name=" Dior Addict Lipstick" data-price="600">
+        <img src="diorlipglow.jpg" alt="D:\proyecto final\venta-cosmetica\diorlipglow.jpg" width="200" height="100">
+        <h2>Dior Addict Lipstick</h2>
+        <p>Price:$600 pesos</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-id="2" data-name="gison gloss" data-price="250">
+        <img src="pinkgisouglow.jpg" alt="D:\proyecto final\venta-cosmetica\pinkgisouglow.jpg" width="208" height="150">
+        <h2>Pink gison gloss</h2>
+        <p>Price:$250 pesos</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-id="3" data-name="Rhode lip tint" data-price="200">
+        <img src="rhodeglow.jpg" alt="D:\proyecto final\venta-cosmetica\rhodeglow.jpg" width="208" height="140">
+        <h2>rhode lip tint</h2>
+        <p>Price:$200 pesos</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-id="4" data-name="Dior Lip Oil" data-price="400">
+        <img src="diorglossglow.jpg" alt="D:\proyecto final\venta-cosmetica\diorglossglow.jpg" width="208" height="140">
+        <h2>Dior Lip Oil</h2>
+        <p>Price:$400 pesos</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-id="5" data-name="Yellow gisou gloss" data-price="250">
+        <img src="yellogisouglow.jpg" alt="D:\proyecto final\venta-cosmetica\yellogisouglow.jpg" width="208" height="140">
+        <h2>Yello gisou gloss</h2>
+        <p>Price:$250 pesos</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+<center>
+    <br>
+  <h2>PERFUMES</h2>
+  <br>
+</center>
+    <div class="product" data-id="6" data-name="GUCCI FLORA" data-price="1500">
+        <img src="gucciglow.jpg" alt="D:\proyecto final\venta-cosmetica\gucciglow.jpg" width="208" height="140">
+        <h2>GUCCI FLORA</h2>
+        <p>Price:$1,500 pesos</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-id="7" data-name="Sweet Tooth" data-price="1700">
+        <img src="sweettoothglow.jpg" alt="D:\proyecto final\venta-cosmetica\sweettoothglow.jpg" width="208" height="140">
+        <h2>Sweet Tooth</h2>
+        <p>Price:$1,700 pesos</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-id="8" data-name="VALENTINO" data-price="2500">
+        <img src="valentinoglow.jpg" alt="D:\proyecto final\venta-cosmetica\valentinoglow.jpg" width="208" height="140">
+        <h2>VALENTINO</h2>
+        <p>Price:$2,500 pesos</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+
+    <div class="product" data-id="9" data-name="VERSACE BRIGHT CRYSTAL" data-price="900">
+        <img src="versaceglow.jpg" alt="D:\proyecto final\venta-cosmetica\versaceglow.jpg" width="208" height="140">
+        <h2>VERSACE BRIGHT CRYSTAL</h2>
+        <p>Price:$900 pesos</p>
+        <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+   
+        <div class="product" data-id="10" data-name="GOOD GIRL BLUSH" data-price="2700">
+            <img src="heelglow.jpg" alt="D:\proyecto final\venta-cosmetica\heelglow.jpg" width="208" height="140">
+            <h2>GOOD GIRL BLUSH</h2>
+            <p>Price:$2,700</p>
+            <button onclick="addToCart(this)">Add to Cart</button>
+        </div>
+    
+    <!-- Add more products as needed -->
+</div>
+<br>
+<br>
+<br>
+
+
+<script src="cart.js"></script>
+<center>
+<footer>
+    <h6>&copy; <span id="current-year"></span>2024 GLOWBEAUTY. Todos los derechos reservados. Created by Gabriela Aguilar-De La Pava 4D.</h6>
+  </footer>
+</center>
+  <script src="script.js"></script>
+</body>
+</html>
